@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style */
+:root {
+    --light_color: #fff;
+    --dark_color: #232323;
+    --basic_color: rgb(126, 105, 86);
+    font-size: 10px;
+    --main_title_size: 4rem;
+    --sub_title_size: 2rem;
+    --body_size: 1.6rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    color: var(--basic_color);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: var(--main_title_size);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--sub_title_size);
+    line-height: 2.72rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+p {
+    font-size: var(--body_size);
+    line-height: 3rem;
+    color: var(--dark_color);
+}
+
+.btn {
+    display: block;
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border: 1px solid var(--basic_color);
+    background-color: transparent;
+    color: var(--basic_color);
+    font-size: 1.8rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--basic_color);
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.mobile {
+    display: none;
+}
+
+/* sec01 (메인슬라이드 & 헤더) start */
+#sec01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Crimson Text', serif;
+    color: var(--light_color);
+}
+
+/* 페이드 슬라이드 */
+#sec01 .slide_list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#sec01 .slide_list .slide_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#sec01 .slide_list .slide_item.active {
+    z-index: 1;
+}
+
+#sec01 .slide_list .slide_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec01 .slide_list .slide_item:nth-child(1) {
+    z-index: 1;
+}
+
+/* 헤더 */
+#sec01 header {
+    width: 90%;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec01 header .logo {
+    width: 190px;
+    height: auto;
+}
+
+#sec01 header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec01 nav {
+    width: 40%;
+}
+
+#sec01 .navi {
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+}
+
+#sec01 .navi li {
+    font-size: var(--sub_title_size);
+    transition: 0.5s;
+}
+
+#sec01 .navi li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+#sec01 .navi .ham_box {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--light_color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+#sec01 .ham_box .line {
+    width: 2.5rem;
+    height: 1.5rem;
+    border-top: 2px solid var(--light_color);
+    border-bottom: 2px solid var(--light_color);
+}
+
+#sec01 .navi .ham_box:hover {
+    background-color: var(--light_color);
+    transition: background-color 0.5s;
+}
+
+#sec01 .navi .ham_box:hover .line {
+    border-top: 2px solid var(--basic_color);
+    border-bottom: 2px solid var(--basic_color);
+}
+
+/* 메인텍스트 */
+#sec01 .sec01_text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sec01 .sec01_text h1 {
+    font-size: 10rem;
+}
+
+#sec01 .sec01_text h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+/* 타이머 */
+#sec01 .timer {
+    width: 15%;
+    position: absolute;
+    left: 5%;
+    bottom: 3.5rem;
+}
+
+#sec01 .timer p {
+    width: 62px;
+    height: 62px;
+    border: 1px solid #767676;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--light_color);
+    cursor: pointer;
+}
+
+#sec01 svg {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec01 circle {
+    fill: none;
+    stroke-width: 2px;
+    stroke: var(--light_color);
+    position: absolute;
+    stroke-dasharray: 189;
+    stroke-dashoffset: 189;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+#sec01 circle.active {
+    animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+    from {
+        stroke-dashoffset: 189;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* 스크롤 */
+#sec01 .scroll {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 5%;
+}
+
+#sec01 .scroll p {
+    font-size: var(--body_size);
+    color: var(--light_color);
+}
+
+#sec01 .scroll .line {
+    width: 0.1rem;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+}
+
+#sec01 .scroll .line .active {
+    width: 0.2rem;
+    height: 25%;
+    background-color: var(--light_color);
+    animation: move 3s ease-in-out infinite forwards;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        transform: translateY(300%);
+    }
+}
+
+/* 카테고리 전체메뉴 */
+#sec01 .category_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light_color);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+#sec01 .category_menu .left {
+    width: 50%;
+    height: 100%;
+}
+
+#sec01 .category_menu .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec01 .category_menu .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#sec01 .category_menu .right ul li {
+    color: var(--basic_color);
+    font-size: 2.5rem;
+    line-height: 10rem;
+}
+
+#sec01 .category_menu .right ul li:hover {
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+#sec01 .category_menu .right .inner {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec01 .category_menu .right .inner .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--basic_color);
+}
+
+#sec01 .category_menu .right .bot {
+    color: var(--basic_color);
+    font-size: 2rem;
+}
+
+#sec01 .category_menu .right .fa-xmark {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--basic_color);
+    border-radius: 50%;
+    color: var(--basic_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3.8rem;
+    right: 10%;
+}
+
+/* sec01 (메인슬라이드 & 헤더) end */
+
+/* sec02 (브랜드 스토리) start */
+#sec02 {
+    margin: 20rem 0 20rem;
+}
+
+#sec02 .brand_text {
+    margin: auto;
+    text-align: center;
+}
+
+#sec02 .brand_text p {
+    font-size: var(--body_size);
+    color: var(--basic_color);
+}
+
+#sec02 .brand_img {
+    margin: 25rem 0 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#sec02 .brand_img .left {
+    width: 55%;
+    height: 100%;
+    margin-bottom: 8rem;
+}
+
+#sec02 .brand_img .left img,
+#sec02 .brand_img .right .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec02 .brand_img .right {
+    width: 38%;
+}
+
+#sec02 .brand_img .right .img {
+    width: 100%;
+    height: 100%;
+}
+
+#sec02 .brand_img .right .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec02 .brand_img .right .text {
+    margin-bottom: 4rem;
+}
+
+/* sec02 (브랜드 스토리) end */
+
+/* sec03 (객실 설명 & 슬라이드) start */
+#sec03 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec03 .inner {
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec03 .slide_container {
+    width: 50%;
+    height: 91%;
+    overflow: hidden;
+    position: relative;
+}
+
+#sec03 .slide_list {
+    width: 400%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#sec03 .slide_item {
+    width: 100%;
+    height: 100%;
+}
+
+#sec03 .slide_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 .btn {
+    margin-top: 10rem;
+}
+
+#sec03 .control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 5%;
+}
+
+#sec03 span {
+    font-size: 5.5rem;
+    color: var(--light_color);
+    cursor: pointer;
+}
+
+/* sec03 (객실 설명 & 슬라이드) end */
+
+/* sec04 (다이닝 설명) start */
+#sec04 {
+    width: 75%;
+    margin: 20rem auto 25rem;
+    text-align: center;
+}
+
+#sec04 .dining_text {
+    margin-bottom: 4rem;
+}
+
+#sec04 .img {
+    width: 100%;
+    display: flex;
+    gap: 0 10px;
+}
+
+#sec04 .img .left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sec04 .img .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+#sec04 .img .right {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#sec04 .img .right a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sec04 .img .right a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+#sec04 a:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* sec04 (다이닝 설명) end */
+
+/* sec05 (호텔 예약 배너) start */
+#sec05 {
+    width: 100%;
+    height: 40vh;
+    background: url(../img/main/main_banner.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25rem 0;
+}
+
+#sec05 .inner {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sec05 .inner .logo {
+    width: 190px;
+}
+
+#sec05 .inner .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec05 .inner p {
+    color: var(--light_color);
+}
+
+#sec05 .inner .btn {
+    background-color: transparent;
+    border: 1px solid var(--light_color);
+    color: var(--light_color);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#sec05 .inner .btn:hover {
+    background-color: var(--light_color);
+    border: 1px solid var(--basic_color);
+    color: var(--basic_color);
+}
+
+/* sec05 (호텔 예약 배너) end */
+
+/* sec06 (객실, 다이닝 프로모션 슬라이드) start */
+#sec06 {
+    width: 100%;
+    margin: auto;
+}
+
+#sec06 .promotion_text {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#sec06 .swiper {
+    width: 87.5%;
+    height: 100%;
+    padding-bottom: 7rem;
+    margin-left: 12.5%;
+}
+
+#sec06 .swiper-slide {
+    width: 29%;
+    height: auto;
+}
+
+#sec06 .swiper-slide .imgbox {
+    width: 100%;
+    height: 70%;
+    cursor: pointer;
+}
+
+#sec06 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec06 h4 {
+    margin-bottom: 1rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+#sec06 .swiper-scrollbar-drag {
+    background-color: #a8a8a8;
+}
+
+/* sec06 (객실, 다이닝 프로모션 슬라이드) end */
+
+/* sec07 (네스트호텔 회원 멤버십) start */
+#sec07 {
+    margin: 25rem 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#sec07 .membership {
+    display: flex;
+    margin-top: 4rem;
+}
+
+#sec07 .mem_text {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#sec07 .mem_text .inner {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec07 .mem_text .inner .text {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sec07 .mem_text .inner .text h4 {
+    font-size: var(--body_size);
+}
+
+#sec07 .mem_img {
+    width: 50%;
+    height: 100%;
+}
+
+#sec07 .mem_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec07 .mem_text .wid_line {
+    width: 0;
+    height: 0.1rem;
+    background-color: rgba(126, 105, 86, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#sec07 .mem_text .hei_line {
+    width: 0.1rem;
+    height: 0%;
+    background-color: rgba(126, 105, 86, 0.6);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* sec07 (네스트호텔 회원 멤버십) end */
+
+/* sec08 (인스타그램) start */
+#sec08 {
+    width: 75%;
+    margin: 25rem auto;
+}
+
+#sec08 .title_text {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#sec08 .img_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec08 .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec08 a {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#sec08 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: var(--sub_title_size);
+    color: var(--light_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sec08 a:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* sec08 (인스타그램) end */
+
+/* sec09 (지도) start */
+#sec09 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#sec09 .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#sec09 .map_text {
+    width: 30%;
+}
+
+#sec09 .map {
+    width: 60%;
+    height: 100%;
+}
+
+#sec09 span {
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+#sec09 h3,
+#sec09 p {
+    line-height: 3.5rem;
+}
+
+/* sec09 (지도) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #edeae7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+footer .logo {
+    margin-left: 10%;
+    width: 190px;
+    height: auto;
+}
+
+footer .logo a {
+
+    margin-left: 10%;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer .text {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .text ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text ul li {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+footer .text p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: var(--basic_color);
+}
+
+/* footer end */
+
+/* top button start */
+.top_btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(126, 105, 86, 0.8);
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.top_btn p {
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+}
+
+/* top button end */

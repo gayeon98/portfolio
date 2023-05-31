@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style */
+:root {
+    --light_font: #fff;
+    --dark_font: #232323;
+    --basic_font: #7e6956;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+body {
+    color: #7e6956;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #232323;
+}
+
+/* reset style end */
+#wrap {
+    position: relative;
+}
+
+/* 카테고리 메뉴 start*/
+.category_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light_font);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.category_menu .left {
+    width: 50%;
+    height: 100%;
+}
+
+.category_menu .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category_menu .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Crimson Text', serif;
+}
+
+.category_menu .right ul li {
+    color: var(--basic_font);
+    font-size: 2.5rem;
+    line-height: 10rem;
+}
+
+.category_menu .right ul li:hover {
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.right .inner {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right .inner .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--basic_font);
+}
+
+.right .bot {
+    color: var(--basic_font);
+    font-size: 2rem;
+}
+
+.right .fa-xmark {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--basic_font);
+    border-radius: 50%;
+    color: var(--basic_font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3.8rem;
+    right: 10%;
+}
+
+/* 카테고리 메뉴 end*/
+
+/* header start */
+header {
+    margin: auto;
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 40%;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.navi li {
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.navi li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.navi .ham_box {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--basic_font);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.ham_box .line {
+    width: 2.5rem;
+    height: 1.5rem;
+    border-top: 2px solid var(--basic_font);
+    border-bottom: 2px solid var(--basic_font);
+}
+
+.navi .ham_box:hover {
+    background-color: var(--light_font);
+    transition: background-color 0.5s;
+}
+
+.navi .ham_box:hover .line {
+    border-top: 2px solid var(--basic_font);
+    border-bottom: 2px solid var(--basic_font);
+}
+
+/* header end */
+
+/* sec01 (타이틀과 배경이미지) start */
+#sec01 {
+    width: 100%;
+    height: 30vh;
+    background: url(../img/room/room_top_banner.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Crimson Text', serif;
+}
+
+/* sec01 (타이틀과 배경이미지) end */
+
+/* sec02 (객실 소개) start */
+#sec02 {
+    text-align: center;
+    margin: 25rem 0;
+}
+
+/* sec02 (객실 소개) end */
+
+/* sec03 (객실 정렬) start */
+#sec03 {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec03 h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+#sec03 h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#sec03 h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#sec03 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#sec03 .deluxe,
+#sec03 .suite {
+    margin-top: 20rem;
+}
+
+#sec03 .imgbox {
+    position: relative;
+}
+
+#sec03 .imgbox a img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sec03 .imgbox a:hover img:nth-child(2) {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* sec03 (객실 정렬) end */
+
+/* sec04 (패키지&프로모션) start */
+.sec04_textbox {
+    text-align: center;
+    margin: 30rem 0 3rem;
+}
+
+#sec04 {
+    width: 75%;
+    height: 60vh;
+    text-align: center;
+    margin: auto;
+}
+
+#sec04 .imgbox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#sec04 .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+#sec04 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec04 span {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sec04 span p {
+    color: #eee;
+}
+
+#sec04 .img:hover span {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* sec04 (패키지&프로모션) end */
+
+/* sec05 (자주묻는질문) start */
+#sec05 {
+    width: 75%;
+    margin: 30rem auto;
+}
+
+#sec05 h1 {
+    font-size: 8rem;
+    color: #232323;
+    text-align: center;
+}
+
+#sec05 h1 span {
+    font-size: 10rem;
+    color: #7e6956;
+}
+
+#sec05 .list {
+    width: 100%;
+    margin-top: 15rem;
+}
+
+#sec05 .title {
+    width: 100%;
+    padding: 3rem;
+    border-bottom: 1px solid rgba(126, 105, 86, 0.5);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#sec05 .text {
+    font-size: 1.6rem;
+    padding: 4rem 4rem 0;
+    color: #232323;
+    line-height: 3.5rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, 0.8s;
+}
+
+/* sec05 (자주묻는질문) end */
+
+/* sec06 (호텔인포) start  */
+#sec06 {
+    width: 100%;
+    height: 50vh;
+    background-color: #edeae7;
+    display: flex;
+    align-items: center;
+}
+
+#sec06 .hotel_info {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#sec06 .textbox {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec06 .text {
+    width: 22%;
+    font-family: 'Crimson Text', serif;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+/* sec06 (호텔인포) end  */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #edeae7;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+footer .logo {
+    width: 30%;
+    margin-left: 10%;
+}
+
+footer .text {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .text ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text ul li {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+footer .text p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #7e6956;
+}
+
+/* footer end */
+
+/* top button start */
+.top_btn {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgba(126, 105, 86, 0.8);
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top_btn p {
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* top button end */

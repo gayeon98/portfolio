@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+}
+
+body::-webkit-scrollbar {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+p {
+    color: #ccc;
+}
+
+header {
+    border-bottom: 1px solid #a8a8a8;
+}
+
+header .logo img {
+    margin: 50px auto 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header .iconbox {
+    position: absolute;
+    right: 10%;
+    width: 7%;
+}
+
+header .iconbox i {
+    font-size: 18px;
+}
+
+header nav>ul {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Amiri', serif;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-family: 'Amiri', serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 200px 0 100px;
+    font-weight: 500;
+}
+
+section {
+    width: 1440px;
+    margin: 0 auto 300px;
+    border: 1px solid;
+    padding: 80px;
+}
+
+section h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+section .top input,
+section .bot input:not(input[type="checkbox"]) {
+    display: block;
+    margin: 10px 0 50px;
+    width: 500px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 0 10px;
+    color: #eee;
+    outline: none;
+}
+
+section .pass p {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+section .top {
+    margin-bottom: 100px;
+}
+
+section input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+section span {
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+section .line {
+    width: 100%;
+    height: 1px;
+    background-color: #a8a8a8;
+    margin: 100px 0 50px;
+}
+
+section .text .top_text,
+.bot_text {
+    display: flex;
+    color: #a8a8a8;
+}
+
+section .top_text {
+    margin-bottom: 30px;
+}
+
+section .top_text p,
+.bot_text p {
+    margin-right: 30px;
+}
+
+section button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 50px;
+    background-color: #000;
+    border: 1px solid #a8a8a8;
+    color: #a8a8a8;
+    transition: 0.5s;
+}
+
+section button:hover {
+    background-color: #eee;
+    color: #000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section .btn {
+    display: flex;
+    justify-content: end;
+}
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+footer .inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logo img {
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* footer end */

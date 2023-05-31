@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style */
+:root {
+    --light_font: #fff;
+    --dark_font: #232323;
+    --basic_font: #7e6956;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+body {
+    color: #7e6956;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hidden{
+    display: none;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #232323;
+}
+
+.btn {
+    display: block;
+    width: 20rem;
+    height: 4rem;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #7e6956;
+    background-color: transparent;
+    color: #7e6956;
+    font-size: 1.8rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7e6956;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+/* reset style end */
+#wrap {
+    position: relative;
+}
+
+/* 카테고리 메뉴 start*/
+.category_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light_font);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.category_menu .left {
+    width: 50%;
+    height: 100%;
+}
+
+.category_menu .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category_menu .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Crimson Text', serif;
+}
+
+.category_menu .right ul li {
+    color: var(--basic_font);
+    font-size: 2.5rem;
+    line-height: 10rem;
+}
+
+.category_menu .right ul li:hover {
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.right .inner {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right .inner .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--basic_font);
+}
+
+.right .bot {
+    color: var(--basic_font);
+    font-size: 2rem;
+}
+
+.right .fa-xmark {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--basic_font);
+    border-radius: 50%;
+    color: var(--basic_font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3.8rem;
+    right: 10%;
+}
+/* 카테고리 메뉴 end*/
+
+/* header start */
+header {
+    margin: auto;
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 40%;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.navi li {
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.navi li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.navi .ham_box {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid var(--basic_font);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.ham_box .line {
+    width: 2.5rem;
+    height: 1.5rem;
+    border-top: 2px solid var(--basic_font);
+    border-bottom: 2px solid var(--basic_font);
+}
+
+.navi .ham_box:hover {
+    background-color: var(--light_font);
+    transition: background-color 0.5s;
+}
+
+.navi .ham_box:hover .line {
+    border-top: 2px solid var(--basic_font);
+    border-bottom: 2px solid var(--basic_font);
+}
+
+/* header end */
+
+/* sec01 start */
+#sec01 {
+    width: 100%;
+    height: 30vh;
+    background: url(../img/dining/dining_top_banner.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Crimson Text', serif;
+}
+
+/* sec01 end */
+
+/* sec02 start */
+#sec02 {
+    text-align: center;
+    margin: 25rem 0;
+}
+
+/* sec02 end */
+
+/* sec03 (플라츠 레스토랑) start */
+#sec03 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#sec03 .textbox {
+    width: 25%;
+    padding-left: 5%;
+}
+
+#sec03 .textbox p {
+    margin: 3rem 0;
+}
+
+span {
+    color: #232323;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+}
+
+#sec03 .imgbox {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#sec03 .imgbox .img1 {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#sec03 .imgbox .img2 {
+    width: 69%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sec03 .imgbox .img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 .imgbox .img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sec03 (플라츠 레스토랑) end */
+
+/* sec04 (플라츠 레스토랑) start */
+#sec04 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin: 25rem 0 30rem;
+}
+
+#sec04 .imgbox {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sec04 .slide_container {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+#sec04 .slide_item {
+    width: 100%;
+}
+
+#sec04 .slide_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec04 .textbox {
+    width: 30%;
+    padding-left: 5%;
+}
+
+table {
+    width: 100%;
+    height: 20vh;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border-bottom: 1px solid #7e6956;
+}
+
+th {
+    font-size: 1.7rem;
+}
+
+td {
+    color: #232323;
+    font-size: 1.6rem;
+}
+
+#sec04 span {
+    display: inline-block;
+    margin: 5rem 0;
+}
+
+#sec04 .btnbox {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sec04 (플라츠 레스토랑) end */
+
+/* sec05 (쿤스트 라운지) start */
+#sec05 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#sec05 .box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+#sec05 .box2 {
+    grid-column: 2/4;
+}
+
+#sec05 .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec05 .text_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#sec05 .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+#sec05 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* sec05 (쿤스트 라운지) end */
+
+/* sec06 (바, 베이커리) start */
+#sec06 {
+    width: 75%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 30rem auto;
+}
+
+#sec06 .left,
+#sec06 .right {
+    width: 49.5%;
+}
+
+#sec06 .imgbox {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#sec06 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#sec06 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#sec06 h1 {
+    margin-top: 1rem;
+}
+
+/* sec06 (바, 베이커리) end */
+
+/* sec07 (룸서비스) start */
+#sec07 {
+    width: 87.5%;
+    height: 60vh;
+    display: flex;
+    margin-left: 12.5%;
+}
+
+#sec07 p {
+    margin: 3rem 0 5rem;
+}
+
+#sec07 .textbox {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#sec07 .imgbox {
+    width: 70%;
+    height: 100%;
+}
+
+#sec07 .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sec07 (룸서비스) end */
+
+/* sec08 (다이닝 프로모션 슬라이드) start */
+.sec08 {
+    width: 90%;
+    height: 100%;
+    margin: 30rem auto;
+}
+
+.sec08 .slide_list {
+    padding-bottom: 5rem;
+    cursor: pointer;
+}
+
+.sec08 .slide_item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec08 .slide_item:nth-child(3) {
+    justify-content: space-evenly;
+}
+
+.sec08 .slide_item .imgbox {
+    width: 65%;
+    height: 100%;
+}
+
+.sec08 .slide_item .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec08 .slide_item .textbox {
+    text-align: center;
+}
+
+.sec08 p {
+    margin: 3rem 0;
+}
+
+.sec08 .box1 h3 {
+    color: #c3443e;
+}
+
+.sec08 .box2 h3 {
+    color: #57191a;
+}
+
+.sec08 .box3 h3 {
+    color: #7e6956;
+}
+
+/* sec08 btn style */
+.sec08 .btn {
+    cursor: pointer;
+    margin: auto;
+}
+
+.sec08 .box1 .btn_1 {
+    border: 1px solid #c3443e;
+    color: #c3443e;
+}
+
+.sec08 .box1 .btn_1:hover {
+    background-color: #c3443e;
+    color: #fff;
+}
+
+.sec08 .box2 .btn_2 {
+    border: 1px solid #57191a;
+    color: #57191a;
+}
+
+.sec08 .box2 .btn_2:hover {
+    background-color: #57191a;
+    color: #fff;
+}
+/* sec08 (다이닝 프로모션 슬라이드) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #edeae7;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+footer .logo {
+    width: 30%;
+    margin-left: 10%;
+}
+
+footer .text {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .text ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text ul li {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+footer .text p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #7e6956;
+}
+
+/* footer end */
+
+/* top button start */
+.top_btn {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgba(126, 105, 86, 0.8);
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+}
+
+.top_btn p {
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* top button end */

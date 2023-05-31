@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif; 
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Amiri', serif;
+    font-size: 30px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #eee;
+    color: #eee;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    border: 1px solid #181818;
+    background-color: #eee;
+    color: #181818;
+    transition: 0.5s;
+}
+
+/* sec01 main banner */
+#sec01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#sec01 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffff7d;
+    position: fixed;
+    padding: 0 8%;
+    z-index: 90;
+}
+
+.bg_change {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sec01 nav {
+    width: 40%;
+    height: 100%;
+}
+
+#sec01 nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec01 nav ul li {
+    font-size: 20px;
+    line-height: 10vh;
+    cursor: pointer;
+}
+
+#sec01 nav ul li:hover {
+    color: #7db38d;
+}
+
+#sec01 h1 {
+    position: absolute;
+    top: 25%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 80px;
+    padding-left: 8%;
+}
+
+#sec01 p {
+    position: absolute;
+    bottom: 13%;
+    left: 8%;
+}
+
+#sec01 img {
+    position: absolute;
+    right: 12%;
+    bottom: 13%;
+}
+
+/* sec02 about_me */
+#sec02 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#sec02 .imgbox {
+    width: 35%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+}
+#sec02 .imgbox .img{
+    width: 450;
+    height: 500px;
+    background-color: #a8a8a8;
+}
+#sec02 .imgbox .inner {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sec02 .sec02_btn {
+    border-bottom: 2px solid #181818;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+#sec02 .sec02_btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#sec02 .textbox {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec02 .textbox h2 {
+    font-family: 'Amiri', serif;
+    margin-bottom: 20PX;
+}
+
+#sec02 .textbox .box {
+    width: 45%;
+}
+
+#sec02 .textbox .inner {
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+#sec02 .edu h2,
+#sec02 .skills h2 {
+    margin-top: 50px;
+}
+
+#sec02 .skills .line {
+    width: 100%;
+    height: 6px;
+    background-color: #e4e4e4;
+    margin-top: 8px;
+    position: relative;
+}
+
+/* skills 애니메이션효과 */
+#sec02 .skills .html .line .active,
+#sec02 .skills .css .line .active,
+#sec02 .skills .js .line .active,
+#sec02 .skills .ps .line .active,
+#sec02 .skills .ai .line .active,
+#sec02 .skills .xd .line .active {
+    width: 0;
+    height: 100%;
+    background-color: #7db38d;
+}
+
+.html_active {
+    animation: line1 2s forwards;
+}
+
+.css_active {
+    animation: line2 2s forwards;
+}
+
+.js_active {
+    animation: line3 2s forwards;
+}
+
+.ps_active {
+    animation: line4 2s forwards;
+}
+
+.ai_active {
+    animation: line5 2s forwards;
+}
+
+.xd_active {
+    animation: line6 2s forwards;
+}
+
+@keyframes line1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes line2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes line3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes line4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes line5 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes line6 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+/* sec03 portfolio */
+#sec03 {
+    background-color: #181818;
+    color: #ccc;
+    width: 100%;
+    height: 300vh;
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+#sec03 h1,
+#sec03 h2 {
+    color: #eee;
+}
+
+#sec03 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sec03 h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#sec03 .portfolio {
+    width: 70%;
+    margin: auto;
+}
+
+#sec03 .portfolio .box {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#sec03 .portfolio .box .img {
+    width: 100%;
+    height: 100%;
+}
+
+#sec03 .portfolio .box .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 .portfolio .box .text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#sec03 .portfolio .text span {
+    font-family: 'Amiri', serif;
+}
+
+#sec03 .portfolio .box .btn:nth-child(2) {
+    margin-left: 30px;
+}
+
+/* sec04 contact */
+#sec04 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec04 .inner {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec04 p {
+    font-size: 30px;
+}
+
+#sec04 span {
+    font-size: 20px;
+    display: inline-block;
+}
+
+#sec04 a {
+    font-size: 100px;
+    font-family: 'Amiri', serif;
+    position: relative;
+}
+
+#sec04 a::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #181818;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+#sec04 a:hover::before {
+    transform: scaleX(1);
+    transition: transform 1s;
+}
+

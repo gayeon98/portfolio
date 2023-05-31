@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 320px;
+    opacity: 0;
+}
+
+/* header start */
+header .logo img {
+    margin: 50px auto 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header .iconbox {
+    position: absolute;
+    right: 10%;
+    width: 7%;
+}
+
+header .iconbox i {
+    font-size: 18px;
+}
+
+header nav>ul {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+/* header end */
+
+/* sec01 (디올 소개) start*/
+#sec01 {
+    text-align: center;
+}
+
+#sec01 h1 {
+    margin-bottom: 50px;
+}
+
+#sec01 p {
+    width: 1340px;
+    margin: 0 auto 200px;
+    text-align: left;
+    font-size: 22px;
+}
+
+/* sec01 (디올 소개) end*/
+
+/* sec02 (디올 소개) start */
+#sec02 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#sec02 .left {
+    text-align: right;
+    margin-top: 100px;
+}
+
+#sec02 .box {
+    width: 560px;
+    height: auto;
+    margin-bottom: 350px;
+}
+
+#sec02 .box:last-child {
+    margin-bottom: 100px;
+}
+
+#sec02 .box img {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec02 .linebox {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+#sec02 .linebox .line {
+    width: 1px;
+    height: 100%;
+    background-color: #a8a8a8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+/* #sec02 .linebox .active {
+    width: 1px;
+    height: 0;
+    background-color: #e7c183;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+} */
+
+/* sec02 (디올 소개) end */
+
+/* sec03 (살롱 비디오) start */
+#sec03 {
+    width: 1440px;
+    margin: 300px auto;
+}
+
+#sec03 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sec03>p {
+    text-align: center;
+    margin: 100px 0;
+}
+
+#sec03 .video {
+    width: 100%;
+    height: 810px;
+    background-color: antiquewhite;
+}
+
+#sec03 .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 .img {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec03 .img img:not(:nth-child(2)) {
+    width: 370px;
+    height: 400px;
+}
+
+/* sec03 (살롱 비디오) end */
+
+/* sec04 (뉴스 & 이벤트) start */
+#sec04 {
+    margin: 300px 0;
+}
+
+#sec04 .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sec04 .inner {
+    width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px 30px;
+    text-align: center;
+}
+
+#sec04 .box .img {
+    position: relative;
+}
+
+#sec04 .box .btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 320px;
+    opacity: 0;
+}
+
+#sec04 .img:hover .btn {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+#sec04 p {
+    transition: 0.5s;
+}
+
+#sec04 .img:hover p {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#sec04 img {
+    cursor: pointer;
+}
+
+#sec04 h3 {
+    margin-top: 30px;
+}
+
+
+/* sec04 (뉴스 & 이벤트) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+footer .inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logo img {
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* footer end */
+
+/* top btn start */
+.top_btn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top_btn P {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+.top_btn .img {
+    width: 100%;
+    height: 100%;
+}
+
+.top_btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotate 30s linear infinite;
+}
+
+.top_btn_black {
+    opacity: 0;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

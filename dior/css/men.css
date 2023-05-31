@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+}
+body::-webkit-scrollbar{
+    background-color: #000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: #ccc;
+}
+
+.btn {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.btn:hover {
+    border-bottom: 1px solid #e7c183;
+    color: #e7c183;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.circle_logo img,
+.circle_logo_sm img {
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* reset style start */
+
+/* header start */
+header {
+    border-bottom: 1px solid #a8a8a8;
+}
+
+header .logo img {
+    margin: 50px auto 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header .iconbox {
+    position: absolute;
+    right: 10%;
+    width: 7%;
+}
+
+header .iconbox i {
+    font-size: 18px;
+}
+
+header nav>ul {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+/* header end */
+
+/* sec01 (봄컬렉션) start */
+#sec01 {
+    width: 1200px;
+    height: 900px;
+    margin: 300px auto;
+    display: flex;
+    align-items: center;
+    color: #a8a8a8;
+}
+
+#sec01 .right {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+#sec01 .right .imgbox {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+
+#sec01 .right .textbox {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+#sec01 .right .imgbox>img:nth-child(1) {
+    margin-right: 20px;
+}
+
+#sec01 .right .circle_logo_sm {
+    position: absolute;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* sec01 (봄컬렉션) end */
+
+/* sec02 (봄컬렉션) start */
+#sec02 {
+    width: 1430px;
+    height: 890px;
+    margin: 300px auto;
+    display: flex;
+}
+
+#sec02 .left {
+    margin-right: 20px;
+    margin-top: 240px;
+}
+
+#sec02 .right {
+    margin-right: 50px;
+}
+
+/* sec02 (봄컬렉션) end */
+
+/* sec03 (봄컬렉션 슬라이드) start */
+#sec03 {
+    width: 1595px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    float: right;
+    margin-bottom: 300px;
+}
+
+#sec03 .text {
+    text-align: right;
+    color: #a8a8a8;
+}
+
+#sec03 .imgbox {
+    width: 1180px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sec03 .imgbox .slide_item {
+    width: 280px;
+    height: 400px;
+    margin-right: 20px;
+    position: relative;
+}
+
+#sec03 .imgbox .slide_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec03 .imgbox .slide_item img:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#sec03 .slide_item:hover img:nth-child(2) {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#sec03 .slide_container {
+    display: flex;
+    width: 2360px;
+}
+
+/* sec03 (봄컬렉션 슬라이드) end */
+
+/* sec04 (여름컬렉션) start */
+#sec04 {
+    clear: both;
+    width: 1440px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sec04 .imgbox {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sec04 .imgbox .center_img {
+    margin-right: 20px;
+}
+
+#sec04 .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#sec04 span {
+    color: #232323;
+}
+
+#sec04 .circle_logo_sm {
+    position: absolute;
+    top: -53px;
+    left: -53px;
+}
+
+/* sec04 (여름컬렉션) end */
+
+/* sec05 (여름컬렉션 제품) start */
+#sec05 {
+    width: 1480px;
+    height: 780px;
+    margin: 300px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+}
+
+#sec05 h3,
+#sec05 p,
+#sec05 span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec05 p {
+    margin-bottom: 20px;
+}
+
+#sec05 .item {
+    width: 272px;
+}
+
+#sec05 .item img {
+    transition: transform 0.5s;
+}
+
+#sec05 .item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* sec05 (여름컬렉션 제품) end */
+
+/* sec06 (흘러가는 텍스트) start */
+#sec06 {
+    width: 100%;
+    height: 70px;
+    margin: 300px 0;
+}
+
+#sec06 .textbox {
+    width: 200%;
+    height: 100%;
+    font-size: 29.5px;
+    display: flex;
+    white-space: nowrap;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    animation: line_move 30s linear infinite;
+}
+
+#sec06 .text {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 70px;
+}
+
+
+@keyframes line_move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* sec06 (흘러가는 텍스트) end */
+
+/* sec07 (남자 옷 제품) start */
+#sec07 {
+    width: 100%;
+    display: flex;
+    margin: 300px 0 200px;
+}
+
+#sec07 .left_menu {
+    width: 300px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 300px;
+    transition: 0.5s;
+}
+
+#sec07 .left_menu ul li:nth-child(2) a {
+    color: #e7c183;
+}
+
+#sec07 .left_menu a:hover {
+    color: #e7c183;
+    transition: 0.5s;
+}
+
+#sec07 .right {
+    width: calc(100% - 300px);
+}
+
+#sec07 .top {
+    width: 1400px;
+    margin: auto;
+}
+
+#sec07 .right .tab {
+    margin: 30px 0 100px;
+}
+
+#sec07 .right .tab a {
+    font-size: 20px;
+    line-height: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 3px 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+#sec07 .right .tab a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+#sec07 .product {
+    width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px 20px;
+}
+
+#sec07 h3,
+#sec07 p,
+#sec07 span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec07 p {
+    margin-bottom: 20px;
+}
+
+#sec07 .product .box {
+    width: 335px;
+    height: 520px;
+}
+
+#sec07 .big_box {
+    width: 690px;
+    height: 1090px;
+    grid-column: 3/5;
+    grid-row: 3/5;
+    position: relative;
+}
+
+#sec07 .big_text {
+    position: absolute;
+    bottom: 0;
+}
+
+#sec07 .big_box img {
+    width: 690px;
+    height: 970px;
+    object-fit: cover;
+}
+
+#sec07 .right .box {
+    position: relative;
+}
+
+#sec07 .right .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec07 .right .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec07 .right .img a img:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sec07 .right .img a:hover img:nth-child(2) {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#sec07 .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* pager */
+.pager {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto 300px;
+    font-size: 20px;
+}
+
+.pager a:nth-child(1) {
+    border-bottom: 1px solid;
+}
+
+.pager a:not(:nth-child(1)) {
+    color: #a8a8a8;
+}
+
+/* sec07 (남자 옷 제품) end */
+
+/* sec08 (bot_video) start */
+#sec08 {
+    width: 100%;
+    height: 540px;
+    margin: 300px 0;
+}
+
+#sec08 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sec08 (bot_video) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+footer .inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logo img {
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* footer end */
+
+/* top btn start */
+.top_btn {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top_btn P {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+.top_btn .img {
+    width: 100%;
+    height: 100%;
+}
+
+.top_btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* top btn end */

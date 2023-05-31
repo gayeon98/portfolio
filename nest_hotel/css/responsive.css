@@ -1,0 +1,351 @@
+@media (max-width:768px) {
+    :root {
+        --main_title_size: 3rem;
+        --sub_title_size: 1.5rem;
+        --body_size: 1.4rem
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    /* sec01 (메인슬라이드 & 헤더) start */
+    #sec01 header .logo {
+        width: 150px;
+    }
+
+    #sec01 .sec01_text h1 {
+        font-size: 5rem;
+    }
+
+    #sec01 .sec01_text h2 {
+        font-size: 2rem;
+    }
+
+    #sec01 nav .none {
+        display: none;
+    }
+
+    #sec01 .navi {
+        justify-content: right;
+        line-height: 5rem;
+    }
+
+    #sec01 .navi .ham_box {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /* 카테고리 메뉴 */
+    #sec01 .category_menu .left {
+        width: 0;
+    }
+
+    #sec01 .category_menu .right {
+        width: 100%;
+    }
+
+    #sec01 .category_menu .right ul li {
+        font-size: 2rem;
+        line-height: 8rem;
+    }
+
+    #sec01 .category_menu .right .fa-xmark {
+        width: 5rem;
+        height: 5rem;
+        right: 5%;
+    }
+
+    #sec01 .category_menu .right .bot {
+        font-size: 1.6rem;
+    }
+
+    /* sec01 (메인슬라이드 & 헤더) end */
+
+    /* sec02 (브랜드 스토리) start */
+    #sec02 {
+        margin: 15rem 0;
+    }
+
+    #sec02 .brand_text {
+        width: 100%;
+    }
+
+    #sec02 .brand_text p {
+        font-size: 1.2rem;
+    }
+
+    #sec02 .brand_img {
+        display: block;
+    }
+
+    #sec02 .brand_img .left {
+        width: 100%;
+    }
+
+    #sec02 .brand_img {
+        margin: 15rem 0;
+    }
+
+    #sec02 .brand_img .right {
+        margin: 15rem auto;
+        width: 90%;
+    }
+
+    /* sec02 (브랜드 스토리) end */
+
+    /* sec03 (객실 설명 & 슬라이드) start */
+    #sec03 {
+        width: 100%;
+        height: auto;
+        padding: 10% 0;
+    }
+
+    #sec03 .inner {
+        width: 90%;
+        height: 90%;
+        display: block;
+    }
+
+    #sec03 .room_text {
+        width: 84%;
+    }
+
+    #sec03 .btn {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    #sec03 .slide_container {
+        width: 100%;
+        height: 60%;
+    }
+    /* sec03 (객실 설명 & 슬라이드) end */
+
+    /* sec04 (다이닝 설명) start */
+    #sec04 {
+        width: 91%;
+        margin: 15rem auto;
+        text-align: left;
+    }
+
+    #sec04 .img {
+        width: 100%;
+        display: block;
+    }
+
+    #sec04 .img .left {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #sec04 .img .right {
+        width: 100%;
+    }
+
+    #sec04 .dining_text {
+        width: 100%;
+    }
+
+    /* sec04 (다이닝 설명) end */
+
+    /* sec05 (호텔 예약 배너) start */
+    #sec05 {
+        height: 50vh;
+        margin: 15rem auto;
+    }
+
+    #sec05 .inner {
+        width: 80%;
+        height: 50%;
+    }
+
+    #sec05 .inner .logo {
+        width: 150px;
+    }
+
+    #sec05 .inner p {
+        font-size: 1.2rem;
+    }
+
+    #sec05 .btn {
+        display: block;
+        width: 15rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        font-size: 1.8rem;
+    }
+    /* sec05 (호텔 예약 배너) end */
+
+    /* sec06 (객실, 다이닝 프로모션 슬라이드) start */
+    #sec06 {
+        width: 100%;
+        margin: 15rem auto;
+    }
+
+    #sec06 .swiper {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    #sec06 .promotion_text {
+        width: 90%;
+        text-align: left;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    #sec06 .promotion_text h3 {
+        font-size: 1.65rem;
+    }
+
+    #sec06 .promotion_text p {
+        font-size: 1.35rem;
+    }
+    /* sec06 (객실, 다이닝 프로모션 슬라이드) end */
+
+    /* sec07 (네스트호텔 회원 멤버십) start */
+    #sec07 {
+        margin: 15rem auto;
+    }
+
+    #sec07 .membership {
+        display: block;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    #sec07 .title_text p {
+        font-size: 1.3rem;
+    }
+
+    #sec07 .mem_text {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    #sec07 .mem_text .inner {
+        width: 50%;
+        height: 50%;
+        padding: 5% 0;
+    }
+
+    #sec07 .mem_text .inner .text h4 {
+        margin-bottom: 1rem;
+    }
+
+    #sec07 .mem_text .inner .text p {
+        font-size: 1.2rem;
+    }
+
+    #sec07 .mem_img {
+        width: 100%;
+    }
+
+    /* sec07 (네스트호텔 회원 멤버십) end */
+
+    /* sec08 (인스타그램) start */
+    #sec08 {
+        width: 85%;
+        margin: 15rem auto;
+    }
+
+    #sec08 .img_box {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* sec08 (인스타그램) end */
+
+    /* sec09 (지도) start */
+    #sec09 {
+        width: 100%;
+        display: block;
+    }
+
+    #sec09 .map_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sec09 .map_text p {
+        display: none;
+    }
+
+    #sec09 .map {
+        width: 100%;
+        height: 75%;
+        margin: 4rem 0;
+    }
+
+    /* sec09 (지도) end */
+
+    /* footer start */
+    footer .logo {
+        width: 150px;
+        margin: 5rem auto;
+    }
+
+    footer {
+        height: 40vh;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 15rem;
+    }
+
+    footer .text {
+        margin: auto;
+        width: 98%;
+        height: 35%;
+    }
+
+    footer .text ul {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+    }
+
+    footer .text ul li {
+        font-size: 1.2rem;
+    }
+
+    footer .text p {
+        font-size: 1.2rem;
+        line-height: 3rem;
+        color: var(--basic_color);
+    }
+
+    /* footer end */
+
+    /* top_btn style */
+    .top_btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .top_btn p {
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

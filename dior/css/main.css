@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+
+}
+
+.hidden {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: #ccc;
+}
+
+.btn {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.btn:hover {
+    border-bottom: 1px solid #e7c183;
+    color: #e7c183;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.circle_logo img,
+.circle_logo_sm img {
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* reset style start */
+
+/* sec01 (메인동영상, 헤더) start */
+#sec01 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#sec01 video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* header */
+header .logo img {
+    margin: 50px auto 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .iconbox {
+    position: absolute;
+    right: 10%;
+    width: 7%;
+}
+
+header .iconbox i {
+    font-size: 18px;
+}
+
+header nav>ul {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+#sec01 .textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sec01 .text h2 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+#sec01 .text h1 {
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 60px;
+    padding-left: 150px;
+    margin-top: 20px;
+}
+
+.splitting .char {
+    animation: slide-in 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-1em) rotate(-0.5turn) scale(0.5);
+    }
+
+    20%,
+    100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+}
+
+/* sec01 (메인동영상, 헤더) end */
+
+/* sec02 (봄,여름컬렉션 / chez moi컬렉션) start */
+#sec02 {
+    width: 100%;
+    height: 200vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#sec02 .top,
+#sec02 .bot {
+    display: flex;
+}
+
+#sec02 .top .left,
+#sec02 .top .right,
+#sec02 .bot .left,
+#sec02 .bot .right {
+    width: 50%;
+}
+
+#sec02 .top .left img,
+#sec02 .bot .right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#sec02 .left,
+#sec02 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec02 .btn {
+    margin-top: 30px;
+}
+
+.circle_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* sec02 (봄,여름컬렉션 / chez moi컬렉션) end */
+
+/* sec03 ((베스트 아이템)) start */
+#sec03 {
+    width: 100%;
+    height: 700px;
+    margin: 300px 0;
+    display: flex;
+}
+
+#sec03 .left {
+    width: 600px;
+    padding-right: 30px;
+    /* margin-right: 40px; */
+}
+
+#sec03 .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec03 h3,
+#sec03 p,
+#sec03 span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec03 .right .title span {
+    font-family: 'Amiri', serif;
+}
+
+#sec03 .right .title h1 {
+    margin-bottom: 0;
+}
+
+#sec03 .right {
+    width: 1280px;
+    height: 700px;
+}
+
+#sec03 .right .title {
+    width: 100%;
+    height: 122px;
+    margin-top: 20px;
+    margin-bottom: 43px;
+}
+
+#sec03 .slide_item .imgbox {
+    position: relative;
+    width: 335px;
+    height: 400px;
+    cursor: pointer;
+}
+
+#sec03 .slide_item .imgbox img {
+    position: absolute;
+}
+
+#sec03 h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#sec03 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#sec03 .imgbox img:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sec03 .imgbox:hover img:nth-child(2) {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* sec03 (베스트 아이템) end */
+
+/* sec04 (cruise 컬렉션) start */
+#sec04 {
+    width: 100%;
+    margin: 300px 0;
+    overflow: hidden;
+}
+
+#sec04 .top {
+    width: 100%;
+    height: 440px;
+    position: relative;
+}
+
+#sec04 .top .textbox {
+    width: 200%;
+    height: 440px;
+    font-size: 150px;
+    display: flex;
+    white-space: nowrap;
+    animation: text 20s linear infinite;
+}
+
+#sec04 .top .text {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#sec04 .top img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sec04 .bot {
+    width: 1480px;
+    margin: 200px auto 0;
+}
+
+#sec04 .bot h3,
+#sec04 .bot p,
+#sec04 .bot span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec04 .bot p {
+    margin-bottom: 20px;
+}
+
+#sec04 .bot>a {
+    display: flex;
+    justify-content: right;
+}
+
+#sec04 .bot .btn {
+    margin-bottom: 50px;
+}
+
+#sec04 .bot .box {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec04 .box .item {
+    position: relative;
+    width: 272px;
+    height: 100%;
+}
+
+#sec04 .box .item img {
+    position: absolute;
+}
+
+#sec04 .box .item .textbox {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#sec04 .item img {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+#sec04 .item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* sec04 (cruise 컬렉션) end */
+
+/* sec05 (레이디 디올 설명글) start */
+#sec05 {
+    width: 90%;
+    margin: 300px auto;
+}
+
+#sec05 h1 {
+    font-size: 200px;
+    line-height: 170px;
+    color: #eee;
+    margin: 0;
+}
+
+#sec05 .top {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#sec05 .top p {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #a8a8a8;
+    line-height: 25px;
+    display: flex;
+    align-items: end;
+}
+
+#sec05 .bot {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec05 .bot h1 {
+    display: flex;
+    align-items: end;
+}
+
+/* sec05 (레이디 디올 설명글) end */
+
+/* sec06 (레이디 디올 제품 이미지) start */
+#sec06 {
+    width: 1440px;
+    height: 733px;
+    display: flex;
+    justify-content: space-between;
+    margin: 300px auto;
+    position: relative;
+}
+
+#sec06 .imgbox {
+    width: 460px;
+    height: 680px;
+    position: relative;
+}
+
+#sec06 .imgbox img {
+    position: absolute;
+}
+
+#sec06 a img:nth-child(2) {
+    opacity: 0;
+}
+
+#sec06 a:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+#sec06 .circle_logo_sm {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* sec06 레이디 디올 제품 이미지) end */
+
+/* sec07 (디올 역사 텍스트 애니메이션) start */
+#sec07 {
+    width: 1440px;
+    height: 48vh;
+    margin: 300px auto;
+}
+
+#sec07 .text {
+    font-size: 120px;
+    line-height: 150px;
+    color: #a8a8a8;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+}
+
+#sec07 .text2 {
+    margin-left: 100px;
+}
+
+#sec07 .text::before {
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    white-space: nowrap;
+    transition: 3s width;
+}
+
+#sec07 .text1::before {
+    content: 'The House of Dior';
+}
+
+#sec07 .text2::before {
+    content: 'unveils its legendary';
+}
+
+#sec07 .text3::before {
+    content: 'history and heritage.';
+}
+
+#sec07 .text:hover::before {
+    width: 100%;
+}
+
+/* sec07 (디올 역사 텍스트 애니메이션) end */
+
+/* sec08 (about) start */
+#sec08 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#sec08 .line {
+    width: 80%;
+    height: 2px;
+    background-color: #a8a8a8;
+    margin-bottom: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sec08 .box:hover .line {
+    background-color: #e7c183;
+    transition: 0.5s;
+}
+
+#sec08>.inner {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec08 .inner .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#sec08 .bot {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: right;
+}
+
+#sec08 .bot>.inner {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#sec08 .bot .box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#sec08 .bot h1 {
+    font-size: 30px;
+}
+
+#sec08 .bot ul li {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#sec08 h1,
+#sec08 p,
+#sec08 ul li,
+#sec08 .btn {
+    color: #000;
+}
+
+#sec08 .btn {
+    border-bottom: 1px solid #000;
+}
+
+#sec08 .btn:hover {
+    color: #e7c183;
+    border-bottom: 1px solid #e7c183;
+}
+
+/* sec08 (about) end */
+
+/* sec09 (뉴스 & 이벤트) start */
+#sec09 {
+    width: 1440px;
+    height: 80vh;
+    margin: 300px auto;
+    display: flex;
+}
+
+#sec09 .left {
+    width: 50%;
+    height: 100%;
+}
+
+#sec09 .left .slide_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sec09 .slide_item {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#sec09 .slide_item:nth-child(1) {
+    z-index: 1;
+}
+
+#sec09 .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec09 .right .title {
+    width: 100%;
+    height: 20%;
+}
+
+#sec09 .right .btn {
+    float: right;
+    margin-top: 20px;
+}
+
+#sec09 .right .text {
+    width: 100%;
+    height: 70%;
+    overflow: auto;
+}
+
+#sec09 .right .text::-webkit-scrollbar {
+    display: none;
+}
+
+#sec09 .right .textbox {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.5);
+}
+
+#sec09 .right .textbox p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#sec09 .right .textbox h3 {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#sec09 .circle_logo_sm {
+    position: absolute;
+    top: 164px;
+    left: 407px;
+    z-index: 99;
+}
+
+/* sec09 (뉴스 & 이벤트) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+footer .inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logo img {
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* footer end */
+
+/* top btn start */
+.top_btn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top_btn P {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+.top_btn .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top_btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotate 30s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top_btn_black {
+    opacity: 0;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* top btn end */

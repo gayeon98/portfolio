@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: #ccc;
+}
+
+.btn {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.btn:hover {
+    border-bottom: 1px solid #e7c183;
+    color: #e7c183;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.circle_logo img,
+.circle_logo_sm img {
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* reset style start */
+
+/* header start */
+header .logo img {
+    margin: 50px auto 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header .iconbox {
+    position: absolute;
+    right: 10%;
+    width: 7%;
+}
+
+header .iconbox i {
+    font-size: 18px;
+}
+
+header nav>ul {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+/* header end */
+
+/* sec01 (top_video) start */
+#sec01 {
+    width: 100%;
+    height: 540px;
+}
+
+#sec01 video {
+    width: 100%;
+    height: 100%;
+}
+
+/* sec01 (top_video) end */
+
+/* sec02 (패션쇼) start */
+#sec02 {
+    width: 100%;
+    height: 850px;
+    margin: 300px auto;
+    position: relative;
+}
+
+#sec02 .slide_container {
+    width: 640px;
+    height: 850px;
+    overflow: hidden;
+}
+
+#sec02 .slide_list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sec02 .slide_list .slide_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec02 h1 {
+    position: absolute;
+    top: 100px;
+    left: 560px;
+    font-size: 100px;
+    line-height: 120px;
+}
+
+#sec02 p {
+    position: absolute;
+    bottom: 100px;
+    left: 720px;
+    color: #a8a8a8;
+}
+
+/* sec02 (패션쇼) end */
+
+/* sec03 (패션쇼 제품) start */
+#sec03 {
+    width: 1480px;
+    margin: 300px auto;
+    text-align: center;
+}
+
+#sec03 .product {
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 80px;
+}
+
+#sec03 h3,
+#sec03 .item p,
+#sec03 span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec03 .item p {
+    margin-bottom: 20px;
+}
+
+#sec03 h3,
+#sec03 .item img {
+    cursor: pointer;
+}
+
+#sec03 .item img {
+    transition: transform 0.5s;
+}
+
+#sec03 .item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* sec03 (패션쇼 제품) end */
+
+/* sec04 (남자 컬렉션) start */
+#sec04 {
+    width: 1440px;
+    height: 940px;
+    /* background-color: #403c36; */
+    margin: 300px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#sec04 h1 {
+    font-size: 80px;
+    line-height: 100px;
+}
+
+#sec04 p {
+    color: #a8a8a8;
+}
+
+#sec04 .textbox {
+    position: relative;
+}
+
+#sec04 .text {
+    width: 790px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#sec04 .text:not(.text:nth-child(1)) {
+    opacity: 0;
+}
+
+#sec04 .imgbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 650px;
+    height: 100%;
+}
+
+#sec04 .img {
+    position: relative;
+    cursor: pointer;
+}
+
+/* sec04 (남자 컬렉션) end */
+
+/* sec05 (흘러가는 텍스트) start */
+#sec05 {
+    width: 100%;
+    height: 70px;
+    margin: 300px 0;
+}
+
+#sec05 .textbox {
+    width: 200%;
+    height: 100%;
+    font-size: 29.5px;
+    display: flex;
+    white-space: nowrap;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    animation: line_move 30s linear infinite;
+}
+
+#sec05 .text {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 70px;
+}
+
+
+@keyframes line_move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* sec05 (흘러가는 텍스트) end */
+
+/* sec06 (크루즈 컬렉션) start */
+#sec06 {
+    width: 100%;
+    height: 1000px;
+    margin: 300px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+
+#sec06 .right {
+    margin-right: 50px;
+}
+
+#sec06 h1 {
+    font-size: 80px;
+    line-height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 620px;
+}
+
+#sec06 p {
+    text-align: right;
+    margin-bottom: 20px;
+    color: #a8a8a8;
+}
+
+#sec06 .imgbox {
+    display: flex;
+    position: relative;
+}
+
+#sec06 .right .circle_logo_sm {
+    position: absolute;
+    top: -53px;
+    left: -53px;
+}
+
+#sec06 .imgbox>img {
+    margin-right: 20px;
+}
+
+#sec06 .slide_container {
+    width: 360px;
+    height: 500px;
+}
+
+#sec06 .slide_list {
+    position: relative;
+}
+
+#sec06 .slide_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sec06 .slide_item:nth-child(1) {
+    z-index: 1;
+}
+/* sec06 (크루즈 컬렉션) end */
+
+/* sec07 (모델 룩북) start*/
+#sec07 {
+    width: 100%;
+    margin: 300px 0;
+}
+
+#sec07 .top {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+#sec07 .top img:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 298px;
+    height: 850px;
+    object-fit: contain;
+}
+
+#sec07 .top h1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    z-index: -1;
+}
+
+#sec07 .model2 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: -2;
+}
+
+#sec07 h3,
+#sec07 p,
+#sec07 span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec07 p {
+    margin-bottom: 20px;
+}
+
+#sec07 .bot {
+    width: 1480px;
+    display: flex;
+    justify-content: space-between;
+    margin: 200px auto 0;
+    text-align: center;
+}
+
+#sec07 .item img {
+    transition: transform 0.5s;
+}
+
+#sec07 .item img,
+#sec07 h3 {
+    cursor: pointer;
+}
+
+#sec07 .item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+#sec07 span {
+    font-family: 'Amiri', serif;
+}
+
+.splitting .char {
+    animation: slide-in 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-1em) rotate(-0.5turn) scale(0.5);
+    }
+
+    20%,
+    100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+}
+/* sec07 (모델 룩북) end */
+
+/* sec08 (chez moi collection) start */
+#sec08 {
+    width: 1680px;
+    height: 900px;
+    margin: 300px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec08 .left {
+    position: relative;
+}
+
+#sec08 .left img {
+    position: absolute;
+    top: 200px;
+}
+
+#sec08 .left h1 {
+    position: absolute;
+    top: 245px;
+    left: 340px;
+    width: 1000px;
+    font-size: 80px;
+    line-height: 100px;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+#sec08 .right {
+    position: relative;
+}
+
+#sec08 .right .circle_logo_sm {
+    position: absolute;
+    top: -53px;
+    left: -53px;
+}
+
+/* sec08 (chez moi collection) end */
+
+/* sec09 (chez moi slide) start */
+#sec09 {
+    width: 1660px;
+    margin: 0 auto 300px;
+}
+
+#sec09 .slide_container {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#sec09 .swiper-slide {
+    width: 25%;
+    cursor: pointer;
+}
+
+#sec09 p {
+    color: #a8a8a8;
+}
+
+/* sec09 (chez moi slide) end */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+}
+
+footer .inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logo img {
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* footer end */
+
+/* top btn start */
+.top_btn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top_btn P {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+.top_btn .img {
+    width: 100%;
+    height: 100%;
+}
+
+.top_btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotate 30s linear infinite;
+}
+
+.top_btn_black {
+    opacity: 0;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

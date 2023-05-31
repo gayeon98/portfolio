@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+/* 
+font-family: 'Amiri', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+:root {
+    --black_title: #111;
+    --black_sub: #343434;
+    --white_title: #eee;
+    --white_sub: #ccc;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrap {
+    background-color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    color: var(--black_title);
+    font-family: 'Amiri', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--black_sub);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* sec01 main banner start */
+#sec01 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    font-family: 'Amiri', serif;
+}
+
+#sec01 .img {
+    width: 887px;
+    height: 100vh;
+}
+
+#sec01 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec01 .text {
+    margin-left: 73px;
+}
+
+#sec01 .text .title {
+    position: absolute;
+    top: 30%;
+}
+
+#sec01 .text .title h3 {
+    color: var(--white_title);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#sec01 .text .title h1 {
+    color: var(--white_title);
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 80px;
+    margin-left: 60px;
+}
+
+#sec01 .bot_text {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    text-align: right;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#sec01 .bot_text p {
+    color: var(--white_sub);
+}
+
+/* sec01 main banner end */
+
+/* sec02  overview start  */
+#sec02 {
+    text-align: center;
+    padding: 200px 0;
+    background-color: #fff;
+}
+
+#sec02 h1 {
+    color: var(--black_title);
+}
+
+/* sec02 overview end */
+
+/* sec03  as is - to be start */
+#sec03 {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 200px 200px;
+}
+
+#sec03 .title p {
+    margin-bottom: 100px;
+}
+
+#sec03 .inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sec03 .inner .box {
+    width: 580px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 18px #00000030;
+}
+
+#sec03 .inner .as_is .box {
+    background-color: #F6F6F6;
+}
+
+#sec03 .inner .to_be .box {
+    background-color: #111;
+}
+
+#sec03 .inner .to_be .box p {
+    color: var(--white_title);
+}
+
+#sec03 .inner .box_mid {
+    margin: 50px 0;
+}
+
+#sec03 .inner .box p {
+    font-size: 16px;
+}
+
+/* sec03  as is - to be  end */
+
+/* sec04 (goal & keyword) start */
+#sec04 {
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 200px;
+    text-align: center;
+}
+
+#sec04 .goal {
+    margin-bottom: 200px;
+}
+
+#sec04 .keyword .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 100px auto 0;
+}
+
+#sec04 .keyword .inner .box {
+    width: 300px;
+    height: 360px;
+    background-color: #F6F6F6;
+    border-radius: 50%;
+    box-shadow: 3px 3px 18px #00000018;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sec04 .keyword .inner .box h2 {
+    font-family: 'Amiri', serif;
+    font-size: 30px;
+    color: var(--black_sub);
+}
+
+#sec04 .keyword .inner .box p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* sec04 (goal & keyword) end */
+
+/* sec05 (typo & color & button) start */
+#sec05 {
+    width: 100%;
+    background-color: #fff;
+    padding: 200px 150px;
+}
+
+#sec05 .typo .text_img {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#sec05 .colors {
+    display: flex;
+    margin: 100px 0;
+}
+
+#sec05 .colors .color,
+#sec05 .colors .font_color {
+    width: 50%;
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sec05 .button_box {
+    width: 100%;
+    height: 268px;
+    background-color: #F6F6F6;
+    box-shadow: 3px 3px 18px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#sec05 .button_box .inner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec05 .button_box .inner .view {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+#sec05 .button_box .inner .view:nth-child(2) {
+    color: #E7C183;
+}
+
+#sec05 .button_box .inner .check {
+    width: 130px;
+    height: 50px;
+    border: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#sec05 .button_box .inner .black {
+    background-color: #000;
+    color: #fff;
+}
+
+#sec05 .tab {
+    width: 170px;
+    height: 50px;
+    border: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+}
+
+#sec05 .button_box .top_btn {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+#sec05 .button_box .top_btn img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 30s linear infinite;
+}
+
+#sec05 .button_box .top_btn p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sec05 .button_box .black p {
+    color: #fff;
+}
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* sec05 (typo & color & button) end */
+
+/* sec06 (main_page) start */
+#sec06 {
+    padding: 200px 0;
+    background: url(../img/plan/main_page_bg.png) no-repeat;
+    background-size: 100% 2000px;
+    position: relative;
+}
+
+#sec06 .title {
+    text-align: center;
+}
+
+#sec06 h1,
+#sec07 h1 {
+    color: #eee;
+}
+
+#sec06 p,
+#sec07 p {
+    color: #ccc;
+}
+
+#sec06 .main {
+    margin-top: 100px;
+    position: relative;
+}
+
+#sec06 .main .img img {
+    margin: auto;
+}
+
+/* 돌아가는 원 style */
+#sec06 .circle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 970px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sec06 .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: move 20s linear infinite;
+}
+
+/* 슬라이드 이미지 style */
+#sec06 .slide_img {
+    position: absolute;
+    top: 1707.4px;
+    right: 50px;
+}
+
+/* 흘러가는 텍스트 style */
+#sec06 .cruise {
+    width: 998px;
+    height: 440px;
+    position: absolute;
+    top: 2025px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    overflow: hidden;
+}
+
+#sec06 .cruise .textbox {
+    width: 200%;
+    height: 440px;
+    display: flex;
+    white-space: nowrap;
+    animation: text 20s linear infinite;
+}
+
+#sec06 .cruise .textbox p {
+    font-size: 80px;
+    font-family: 'Amiri', serif;
+}
+
+#sec06 .cruise .text {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#sec06 .cruise img {
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 설명글 위치 style */
+#sec06 .text_box {
+    position: absolute;
+    top: 0;
+    right: 1450px;
+}
+
+#sec06 .text1 {
+    top: 300px;
+}
+
+#sec06 .text2 {
+    top: 900px;
+}
+
+#sec06 .text3 {
+    top: 1700px;
+}
+
+#sec06 .text4 {
+    top: 2400px;
+}
+
+#sec06 .text5 {
+    top: 3100px;
+}
+
+#sec06 .text6 {
+    top: 4150px;
+}
+
+#sec06 .text7 {
+    top: 4800px;
+}
+
+#sec06 .text8 {
+    top: 5400px;
+}
+
+/* sec06 (main_page) end */
+
+/* sec07 (sub_page) start */
+#sec07 {
+    padding: 200px 150px;
+    background: url(../img/plan/sub_page_bg.png) no-repeat;
+    background-size: 100% 1000px;
+}
+
+#sec07>.title {
+    text-align: center;
+}
+
+/* products */
+#sec07 .products {
+    margin: 200px 0;
+}
+
+#sec07 .title h2 {
+    font-size: 30px;
+    font-family: 'Amiri', serif;
+    color: #eee;
+}
+
+#sec07 .page_img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#sec07 .page_img p {
+    color: #E7C183;
+}
+
+#sec07 .products .men {
+    margin-top: 100px;
+}
+
+/* detail & collection */
+#sec07 .detail_collection {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec07 .collection {
+    margin-top: 150px;
+}
+
+#sec07 .detail_collection img,
+#sec07 .about_etc .about img {
+    margin-top: 50px;
+}
+
+/* about & login & mypage & form */
+#sec07 .about_etc{
+    margin: 200px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+#sec07 .etc p{
+    color: #E7C183;
+}
+#sec07 .etc .mypage,
+#sec07 .etc .login,
+#sec07 .etc .form{
+    margin-top: 200px;
+}
+/* sec07 (sub_page) end */
+
+/* sec08 (Publishing) start */
+#sec08{
+    padding: 200px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+#sec08 .title{
+    padding: 0 200px;
+}
+#sec08 .container{
+    width: 400%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+}
+#sec08 .slide_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: slide_move 35s linear infinite;
+}
+#sec08 .slide_list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes slide_move{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+/* sec08 (Publishing) end */
+
+/* see09 (mock up) start */
+#sec09{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#sec09 .mockup{
+    position: absolute;
+    left: -10%;
+    bottom: 2%;
+}
+#sec09 .mockup img{
+    width: 95%;
+}
+#sec09 .text{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+#sec09 h1{
+    color: #eee;
+}
+#sec09 p{
+    color: #ccc;
+    font-family: 'Amiri', serif;
+}
+/* see09 (mock up) end */

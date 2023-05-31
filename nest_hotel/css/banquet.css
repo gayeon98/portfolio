@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* reset style */
+:root {
+    --light_font: #fff;
+    --dark_font: #232323;
+    --basic_font: #7e6956;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+body {
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 8rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+/* header */
+header {
+    width: 90%;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav {
+    width: 35%;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+}
+
+.navi li {
+    font-size: 2rem;
+    transition: 0.5s;
+    font-family: 'Crimson Text', serif;
+}
+
+.navi li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+/* 풀페이지 start */
+#fp-nav ul li a span {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.sec01~.sec05 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.textbox {
+    width: 90%;
+    position: absolute;
+    bottom: 5vh;
+    left: 5%;
+}
+
+.textbox .line {
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 3rem;
+}
+
+.sec01 {
+    background: url(../img/banquet/wedding.png) no-repeat;
+}
+
+.sec02 {
+    background: url(../img/banquet/baumHall.png) no-repeat;
+}
+
+.sec03 {
+    background: url(../img/banquet/steinHall.png) no-repeat;
+}
+
+.sec04 {
+    background: url(../img/banquet/garden.png) no-repeat;
+}
+
+.sec05 {
+    background: url(../img/banquet/birthday.png) no-repeat;
+}
